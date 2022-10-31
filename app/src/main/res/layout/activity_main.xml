@@ -1,18 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/main_toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/app_name"
+            app:titleTextColor="@color/textColorWhite"></com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableEnd="@drawable/finger"
+            android:drawablePadding="8dp"
+            android:text="Paste Your Url Here"
+            android:textColor="@color/textColorBlack"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/url_textLayout"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="32dp"
+              android:layout_marginTop="8dp"
+              android:orientation="horizontal"
+              android:layout_marginEnd="32dp">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/url_textEditText"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Enter Url here">
+              </com.google.android.material.textfield.TextInputEditText>
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:orientation="horizontal">
+          <Button
+              android:id="@+id/url_save"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Save"
+              android:layout_margin="8dp"
+              android:textColor="@color/white">
+          </Button>
+
+          <Button
+              android:id="@+id/url_search"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Search"
+              android:layout_margin="8dp"
+              android:textColor="@color/white">
+          </Button>
+      </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:textSize="22sp"
+            android:layout_marginStart="8dp"
+            android:text="Your Previous Links : "></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/url_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>
