@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android Study/VideoStream/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android Study/VideoStream/app/src/main/res/drawable/ic_delete.xml" value="0.1475" />
+        <entry key="..\:/Android Study/VideoStream/app/src/main/res/drawable/url_bg.xml" value="0.1475" />
+        <entry key="..\:/Android Study/VideoStream/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Android Study/VideoStream/app/src/main/res/layout/activity_video.xml" value="0.19010416666666666" />
-        <entry key="..\:/Android Study/VideoStream/app/src/main/res/layout/url_item.xml" value="0.17119565217391305" />
+        <entry key="..\:/Android Study/VideoStream/app/src/main/res/layout/url_item.xml" value="0.22" />
       </map>
     </option>
   </component>

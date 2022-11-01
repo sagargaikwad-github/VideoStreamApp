@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">VideoStream</string>
+    <string name="saveBTN"><![CDATA[Save & View]]></string>
 </resources>

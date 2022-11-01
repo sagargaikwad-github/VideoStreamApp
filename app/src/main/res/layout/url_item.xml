@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/url_bg"
+    android:layout_marginBottom="8dp"
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/url"
+        android:id="@+id/url_item_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:background="#ff6659"
+        android:text=" Nickname : "
+        android:textColor="@color/textColorWhite"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/url_item_url"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_below="@id/url_item_nickname"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="4dp"
+        android:text="TextView"
+        android:padding="6dp"
         android:textColor="@color/textColorBlack"
-        android:textSize="16sp"
-        android:text="TextView" />
-</LinearLayout>
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/url_item_deleteItem"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="9dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_delete" />
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_below="@id/url"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:background="#A5AC8F">-->
+<!--    </View>-->
+</RelativeLayout>

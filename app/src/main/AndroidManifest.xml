@@ -16,10 +16,10 @@
         android:theme="@style/Theme.VideoStream.Edited"
         tools:targetApi="31">
         <activity
-            android:name=".VideoActivity"
+            android:name=".ActivityClass.VideoActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ActivityClass.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
